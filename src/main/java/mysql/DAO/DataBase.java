@@ -36,7 +36,7 @@ public class DataBase {
 	}
 	
 	
-	public void showEmployees()
+	public void showEmployeeData()
 	{
 		try {
 			Statement stmt = con.createStatement();

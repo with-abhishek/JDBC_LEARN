@@ -14,9 +14,9 @@ public class App {
 		e.setGender("Male");
 		e.setSalary(90900);
 		
-		db.insertByPrepare(e);
-//		db.insert(e);
-		db.showEmployees();
+		
+		db.insert(e);
+		db.showEmployeeData();
 		
 	}
 
