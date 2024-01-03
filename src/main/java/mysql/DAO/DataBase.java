@@ -55,21 +55,5 @@ public class DataBase {
 	}
 	
 	
-	public void insertByPrepare(Employee e)
-	{
-		try {
-
-			PreparedStatement ps = con.prepareStatement("insert into Employee(id,name,gender,salary) values (?,?,?,?)");
-			ps.setInt(1, e.getId());
-			ps.setString(2, e.getName());
-			ps.setString(3, e.getGender());
-			ps.setInt(4, e.getSalary());
-			
-			ps.executeUpdate();
-		} catch (SQLException ex) {
-			ex.printStackTrace();
-		}
-		System.out.println("Mission successful by prep.............");
-
-	}
+	
 }
